@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pokedex</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.min.css" />
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+    </head>
+
+    <body>
+
+        <header class="menu-bg">
+            <div class="menu">
+                <div class="menu-logo">
+                    <a href="index.html">Pokedex</a>
+                </div>
+                <nav class="menu-nav">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <h1>Escolha o seu Pokemon</h1>
+            <div class="imagemPokemon"><img src="img/pokemon-logo.webp" alt=""></div>
+            <form class="busca">
+                <input type="search" id="searchInput" placeholder="Insira o nome/ID" />
+                <button>Buscar</button>
+            </form>
+
+            <div class="resultado">
+                <div class="titulo">--</div>
+
+                <div class="info">
+                    <div class="perfil">
+                        <div class="perfilPeso">Peso</div>
+                        <div class="perfilPesoValor">-- kg</div>
+
+                        <div class="perfilAltura">Altura</div>
+                        <div class="perfilAlturaValor">-- cm</div>
+                    </div>
+                    <div class="caracteristicas">
+                        <div class="caracteristicasTipo">Tipo</div>
+                        <div class="caracteristicasInfo">--</div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="aviso"></div>
+
+            <footer>Feito por <a href="sobre.html">Jessé Júnior</a></footer>
+        </main>
+
+        <script src="js/script.js"></script>
+
+    </body>
+
+</html>

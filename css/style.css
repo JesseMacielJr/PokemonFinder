@@ -1,0 +1,249 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+ul {
+   list-style: none;
+}
+
+a {
+   text-decoration: none;
+   color: #f3f3f3;
+}
+
+body {
+   background: rgb(1, 98, 246);
+   background: linear-gradient(
+      145deg,
+      rgba(1, 98, 246, 1) 38%,
+      rgba(1, 109, 246, 1) 63%
+   );
+   font-family: "Roboto", sans-serif;
+}
+
+main h1 {
+   font-size: 2.5em;
+   margin-bottom: 50px;
+}
+
+h1,
+h2 {
+   color: #fff;
+   margin: 20px 0;
+}
+
+.imagemPokemon img {
+   min-width: 200px;
+   max-width: 250px;
+   max-height: 250px;
+   margin-bottom: 50px;
+}
+
+.busca {
+   display: flex;
+   width: 300px;
+}
+.busca #searchInput {
+   flex: 1;
+   padding: 10px;
+   outline: none;
+   font-size: 15px;
+   border-radius: 5px;
+   border: 0;
+}
+.busca button {
+   padding: 10px;
+   font-size: 15px;
+   border: 0;
+   background-color: #555;
+   color: #fff;
+   border-radius: 5px;
+   margin-left: 10px;
+   cursor: pointer;
+}
+.busca button:hover {
+   background-color: #444;
+}
+
+.resultado {
+   width: 450px;
+   display: none;
+   border: 1px dotted #fff;
+   margin-top: 20px;
+   padding-bottom: 20px;
+   border-radius: 5px;
+   background-color: rgba(0, 0, 0, 0.2);
+}
+
+.titulo {
+   width: 100%;
+   color: #fff;
+   font-size: 25px;
+   font-weight: bold;
+   text-align: center;
+   padding: 20px;
+}
+
+.info {
+   display: flex;
+   width: 100%;
+}
+.info .perfil {
+   flex: 1;
+   text-align: center;
+}
+.info .caracteristicas {
+   flex: 1;
+   text-align: center;
+}
+.perfilPeso,
+.perfilAltura,
+.caracteristicasTipo {
+   color: #fff;
+   font-size: 16px;
+   margin-bottom: 5px;
+}
+.perfilPesoValor,
+.perfilAlturaValor,
+.caracteristicasInfo {
+   color: #fff;
+   font-size: 30px;
+   font-weight: bold;
+}
+.tempInfo sup {
+   font-size: 15px;
+   font-weight: normal;
+}
+.caracteristicasInfo span {
+   font-size: 15px;
+   font-weight: normal;
+}
+
+.aviso {
+   color: #fff;
+   padding-top: 20px;
+}
+
+footer {
+   margin-top: 80px;
+   color: #fff;
+   font-size: 13px;
+}
+
+footer a {
+   text-decoration: underline;
+}
+
+/* Estilo extra */
+main,
+.principal {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+main {
+   min-height: 100vh;
+}
+/* Menu */
+.menu-bg {
+   background: none;
+   position: fixed;
+   width: 100%;
+}
+.menu {
+   max-width: 1660px;
+   margin: 0 auto;
+   padding: 30px 20px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+}
+.menu a {
+   color: white;
+}
+.menu-logo a {
+   font-size: 2.25em;
+   font-weight: bold;
+   margin: 0 10px;
+}
+.menu-nav ul {
+   display: flex;
+   flex-wrap: wrap;
+}
+.menu-nav li + li {
+   margin-left: 30px;
+}
+.menu-nav a {
+   font-size: 1.25em;
+   display: block;
+   padding: 10px;
+}
+.menu-nav a:hover {
+   color: rgba(0, 0, 0, 0.2);
+   transition: all 0.5s ease;
+}
+
+/* Sobre */
+h1.sobre {
+   margin-top: 75px;
+}
+
+.perfilPessoal {
+   max-width: 960px;
+   padding: 0 25px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-top: 20px;
+}
+
+.imagem img {
+   width: 250px;
+   height: 250px;
+   border-radius: 50%;
+   object-fit: cover;
+   box-shadow: 5px 5px 30px rgb(22, 22, 22);
+}
+
+h2 {
+   margin: 30px 0 15px 0;
+}
+
+.texto-sobre,
+.texto-caracteristicas {
+   max-width: 720px;
+   margin-bottom: 15px;
+}
+
+.texto-caracteristicas {
+   align-self: flex-start;
+}
+
+.texto-caracteristicas p {
+   margin-bottom: 5px;
+}
+
+.texto-sobre p,
+.texto-caracteristicas p {
+   color: #fdfdfd;
+   line-height: 1.5;
+   text-align: justify;
+}
+
+.redes-sociais a + a {
+   margin-left: 20px;
+}
+
+.fab {
+   font-size: 2.5em !important;
+   color: #fff;
+}
+
+.fab:hover {
+   transform: scale(1.1);
+}
